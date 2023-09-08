@@ -46,7 +46,7 @@ class _LeaveFormState extends State<LeaveForm> {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: initialDate,
-      firstDate: DateTime(2000),
+      firstDate: DateTime.now(),
       lastDate: DateTime(2101),
     );
     if (picked != null && picked != selectedStartDate)
@@ -62,7 +62,7 @@ class _LeaveFormState extends State<LeaveForm> {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: initialDate,
-      firstDate: DateTime(2023),
+      firstDate: DateTime.now(),
       lastDate: DateTime(2024),
     );
     if (picked != null && picked != selectedEndDate) {
